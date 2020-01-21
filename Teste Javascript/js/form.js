@@ -46,10 +46,12 @@ function obtemPacienteDoFormulario(form){
 function montaTr(paciente){	
 	//cria a Tr da tabela
 	var pacienteTr = document.createElement("tr");
-
+	pacienteTr.classList.add("paciente");
+	nomeTd.textContent = paciente.nome;
 
 	//Cria as Tds da tabela
 	var nomeTd = document.createElement("td");
+	nomeTd.classList.add("info-nome");
 	var pesoTd = document.createElement("td");
 	var alturaTd = document.createElement("td");
 	var gorduraTd = document.createElement("td");
@@ -72,4 +74,14 @@ function montaTr(paciente){
 	pacienteTr.appendChild(imcTd);
 
 	return pacienteTr;
+}
+
+
+function montaTd(){
+	var td = document.createElement("td");
+	td.textContent = 
+
+
+
+
 }
